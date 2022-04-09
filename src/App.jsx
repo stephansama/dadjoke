@@ -6,39 +6,43 @@ import { GlobalProvider } from './context/GlobalContext'
 
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
-import { Controls } from './components/Controls'
 
 import { Joke } from './pages/Joke'
+import { Random } from './pages/Random'
 import { Search } from './pages/Search'
 
 function App() {
 	return (
-		<GlobalProvider>
-			<Box
-				sx={{
-					display: 'flex',
-					flexDirection: 'column',
-					height: '100vh',
-				}}
-			>
-				<Navbar />
+		<BrowserRouter>
+			<GlobalProvider>
 				<Box
 					sx={{
 						display: 'flex',
 						flexDirection: 'column',
-						flexGrow: 1,
+						height: '100vh',
+						backgroundColor: 'background.paper',
+						color: 'text.primary',
 					}}
 				>
-					<BrowserRouter>
+					<Navbar />
+					<Box
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+							flexGrow: 1,
+						}}
+					>
 						<Routes>
-							<Route exact path='/' element={<Controls />} />
-							<Route path='/jokes/' element={<Joke />} />
+							<Route exact path='/' element={<Search />} />
+							<Route path='/jokes/:jokeid' element={<Joke />} />
+							<Route path='/random/' element={<Random />} />
+							<Route path='*' element={<h3>404 Not Found</h3>} />
 						</Routes>
-					</BrowserRouter>
+					</Box>
+					<Footer />
 				</Box>
-				<Footer />
-			</Box>
-		</GlobalProvider>
+			</GlobalProvider>
+		</BrowserRouter>
 	)
 }
 
