@@ -7,7 +7,7 @@ export const Navbar = () => {
 		<div>
 			<AppBar position='static' color='primary'>
 				<Toolbar>
-					<Typography variant='h6'>Dad Joke Engine</Typography>
+					<Typography variant='h6'>Dad Joke Generator</Typography>
 				</Toolbar>
 			</AppBar>
 		</div>
