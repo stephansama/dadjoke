@@ -8,7 +8,7 @@ For this project, we’re going to build a simple jokes website using
 https://icanhazdadjoke.com. The API and its documentation can be found here:
 https://icanhazdadjoke.com/api
 
-Core Requirements
+### Core Requirements
 
 -   [x] Be able to search for a joke
 -   [x] Be able to retrieve a random joke

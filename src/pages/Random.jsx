@@ -9,6 +9,7 @@ export const Random = () => {
 
 	useEffect(() => {
 		if (randomJoke === '') getRandomJoke()
+		// eslint-disable-next-line
 	}, [])
 
 	return (
