@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-[Click here]() to see the deployed application
+[Click here](https://resplendent-meerkat-d7be87.netlify.app/) to see the deployed application
 
 For this project, we’re going to build a simple jokes website using
 https://icanhazdadjoke.com. The API and its documentation can be found here:
