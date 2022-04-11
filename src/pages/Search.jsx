@@ -1,11 +1,12 @@
 import { Typography } from '@mui/material'
-import React from 'react'
 import { Controls } from '../components/Controls'
 
 export const Search = () => {
 	return (
 		<div>
-			<Typography variant='body1'>Search below for a dad joke</Typography>
+			<Typography sx={{ mb: '25px' }} align='center' variant='body1'>
+				Use the search field below to find a dad joke...
+			</Typography>
 			<Controls />
 		</div>
 	)
