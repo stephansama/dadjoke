@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Box } from '@mui/system'
+
+import { Box } from '@mui/material'
 
 // Context
 import { GlobalProvider } from './context/GlobalContext'
@@ -22,7 +23,7 @@ function App() {
 					sx={{
 						display: 'flex',
 						flexDirection: 'column',
-						height: '100vh',
+						minHeight: '100vh',
 						backgroundColor: 'background.paper',
 						color: 'text.primary',
 					}}
